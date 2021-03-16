@@ -28,8 +28,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Instalando Modificações no POM.xml
-      run: mvn clean install
+      run: mvn clean install -B
     - name: Compilando o Projeto
-      run: mvn compile
+      run: mvn compile -B
     - name: Rodar o Projeto entregando resultado
-      run: mvn exec:java
+      run: mvn exec:java -B
